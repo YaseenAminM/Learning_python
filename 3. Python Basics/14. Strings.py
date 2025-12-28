@@ -23,3 +23,11 @@ last_name = "Amin"
 
 full_name = first_name + " " + last_name
 print(full_name)
+
+# ################################
+# String Concatenation
+
+"Hello," + "Yaseen"
+
+print("Hello," + " Yaseen")
+print("Hello" + 5)  # can only concatenate str (not "int") to str
