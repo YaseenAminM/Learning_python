@@ -1,5 +1,4 @@
 # Booleans
-
 name = "Yaseen"
 
 is_cool = False
