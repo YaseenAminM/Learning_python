@@ -8,3 +8,6 @@ basket = ['a', 'b', 'c', 'd', 'e', 'f']
 # Python Keyword
 
 print('b' in basket)
+print('x' in basket)
+print("i" in "hi my name is Ian")
+print(basket.count('d'))
