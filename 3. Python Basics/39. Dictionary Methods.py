@@ -16,6 +16,5 @@ print(user.get("age", 55))
 
 
 # user2 = dict(key=value)
-
 user2 = dict(name="Yaseen")
 print(user2)
