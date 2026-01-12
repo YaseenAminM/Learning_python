@@ -1,1 +1,2 @@
-key, value
+
+for row in picture:
