@@ -1,7 +1,7 @@
 # Default Parameters and Keyword Arguments
 
-
-def say_hello(name, emoji):
+# Default Parameters
+def say_hello(name="Darth Vadar", emoji="👿 "):
     print(f"Hello, {name} {emoji}")
 
 
@@ -13,3 +13,5 @@ say_hello("Amin", "😍")
 say_hello(emoji="🤣", name="Noorji")
 say_hello(emoji="🤣", name="Noorji")
 say_hello(emoji="🤣", name="Noorji")
+
+say_hello()
