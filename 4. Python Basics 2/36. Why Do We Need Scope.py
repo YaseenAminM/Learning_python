@@ -1,4 +1,4 @@
-# nonlocal Keyword
+# Why Do We Need Scope
 
 def outer():
     x = "local"
