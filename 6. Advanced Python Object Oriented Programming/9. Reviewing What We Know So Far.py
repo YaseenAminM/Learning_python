@@ -1,4 +1,5 @@
-# @classmethod and @staticmethod
+# Reviewing What We Know So Far
+
 
 class PlayerCharater:
     # Class object Attribute
