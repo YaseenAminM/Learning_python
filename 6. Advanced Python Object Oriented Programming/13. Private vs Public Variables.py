@@ -1,28 +1,30 @@
 # Private vs Public Variables
 
-# Encapsulation
+
+# _private_variable = "data "
+
 class PlayerCharacter:
     def __init__(self, name, age):
-        self.name = name
-        self.age = age
+        self._name = name
+        self._age = age
 
     def run(self):
         print("run")
 
     def speak(self):
-        print(f"my name is {self.name}, and I and {self.age} years old.")
+        print(f"my name is {self._name}, and I and {self._age} years old.")
 
 
 # PlayerCharacter Object:
 player1 = PlayerCharacter("Yaseen", 26)
-print(player1.name)
-print(player1.age)
+print(player1._name)
+print(player1._age)
 player1.speak()
 
 print((1, 2, 3, 1).count(1))
 print(len((1, 2, 3, 1)))
 
-player1.name = "!!!!!"
-player1.speak = "BOOOO"
+# player1.name = "!!!!!"
+# player1.speak = "BOOOO"
 
-print(player1.speak)
+print(player1.speak())
