@@ -1,6 +1,5 @@
 # 19. Object Introspection
 
-
 class User(object):
     def __init__(self, email):
         self.email = email
