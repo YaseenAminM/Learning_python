@@ -11,3 +11,13 @@ while True:
     else:
         print("Thank you!")
         break
+
+# def get_user_age():
+#     try:
+#         age = int(input("Enter you age? : "))
+#         return age
+#     except Exception as e:
+#         return e
+
+
+# print(get_user_age())
