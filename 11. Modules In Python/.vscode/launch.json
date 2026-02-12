@@ -6,6 +6,18 @@
             "type": "debugpy",
             "request": "launch",
             "module": "test-app"
+        },
+        {
+            "name": "Python Package: shopping-package",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "shopping-package"
+        },
+        {
+            "name": "Python Package: shopping_package",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "shopping_package"
         }
     ]
 }

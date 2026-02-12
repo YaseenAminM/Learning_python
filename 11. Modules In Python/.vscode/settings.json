@@ -4,6 +4,16 @@
       "path": "test-app_project",
       "envManager": "ms-python.python:venv",
       "packageManager": "ms-python.python:pip"
+    },
+    {
+      "path": "shopping-package_project",
+      "envManager": "ms-python.python:venv",
+      "packageManager": "ms-python.python:pip"
+    },
+    {
+      "path": "shopping_package_project",
+      "envManager": "ms-python.python:system",
+      "packageManager": "ms-python.python:pip"
     }
   ]
 }
