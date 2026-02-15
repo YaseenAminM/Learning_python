@@ -1,0 +1,2 @@
+my_file.seek(0)
+print(my_file.read())
