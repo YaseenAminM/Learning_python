@@ -1,1 +1,1 @@
-if random == userNum:
+pyjokes

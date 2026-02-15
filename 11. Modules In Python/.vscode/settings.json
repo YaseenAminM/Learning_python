@@ -12,7 +12,12 @@
     },
     {
       "path": "shopping_package_project",
-      "envManager": "ms-python.python:system",
+      "envManager": "ms-python.python:venv",
+      "packageManager": "ms-python.python:pip"
+    },
+    {
+      "path": "test_app_project",
+      "envManager": "ms-python.python:venv",
       "packageManager": "ms-python.python:pip"
     }
   ]

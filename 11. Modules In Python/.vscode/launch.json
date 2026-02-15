@@ -18,6 +18,12 @@
             "type": "debugpy",
             "request": "launch",
             "module": "shopping_package"
+        },
+        {
+            "name": "Python Package: test_app",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "test_app"
         }
     ]
 }
