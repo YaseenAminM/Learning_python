@@ -1,2 +1,4 @@
-my_file.seek(0)
-print(my_file.read())
+
+import os
+
+print(os.path.abspath("sad.txt"))
