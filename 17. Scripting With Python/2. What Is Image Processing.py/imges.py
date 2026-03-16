@@ -27,5 +27,13 @@ print(img.mode)
 # RGB	3×8-bit pixels, true color
 # RGBA	4×8-bit pixels, true color with transparency mask
 
-convert_img = img.convert("RGBA")
-convert_img.save("grey.png", 'png')
+# convert_img = img.convert("RGBA")
+# convert_img.save("grey.png", 'png')
+
+
+filter_img = img.convert("RGBA")
+# crooked_img = filter_img.rotate(180)
+
+resize_img = filter_img.resize((300, 300))
+
+resize_img.save("grey.png", 'png')
