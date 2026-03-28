@@ -31,9 +31,12 @@ print(img.mode)
 # convert_img.save("grey.png", 'png')
 
 
-filter_img = img.convert("RGBA")
+filter_img = img.convert("L")
 # crooked_img = filter_img.rotate(180)
 
 resize_img = filter_img.resize((300, 300))
+crooked = resize_img.rotate(90)
+box = crooked.crop([100, 100, 200, 200])
+box.save("grey.png", 'png')
 
-resize_img.save("grey.png", 'png')
+box.show()
