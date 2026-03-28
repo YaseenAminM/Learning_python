@@ -1,10 +1,10 @@
 from PIL import Image, ImageFilter
 from pathlib import Path
 
-img = Image.open(f"{Path(__file__).parent}/pokedex/Pokedex/pikachu.jpg")
-# img.show()
-print(img.size)
-print(img.mode)
+# img = Image.open(f"{Path(__file__).parent}/pokedex/Pokedex/astro.jpg")
+# # img.show()
+# print(img.size)
+# print(img.mode)
 
 
 # print(dir(img))
@@ -31,12 +31,24 @@ print(img.mode)
 # convert_img.save("grey.png", 'png')
 
 
-filter_img = img.convert("L")
-# crooked_img = filter_img.rotate(180)
+# filter_img = img.convert("L")
+# # crooked_img = filter_img.rotate(180)
 
-resize_img = filter_img.resize((300, 300))
-crooked = resize_img.rotate(90)
-box = crooked.crop([100, 100, 200, 200])
-box.save("grey.png", 'png')
+# resize_img = filter_img.resize((300, 300))
+# crooked = resize_img.rotate(90)
+# box = crooked.crop([100, 100, 200, 200])
+# box.save("grey.png", 'png')
 
-box.show()
+# box.show()
+
+# ===========================================================
+
+
+img = Image.open(f"{Path(__file__).parent}/pokedex/Pokedex/astro.jpg")
+
+
+# new_image = img.resize((400, 400))
+img.thumbnail((400, 200))
+img.save("thumnaill.jpg")
+img.show()
+print(img.size)
