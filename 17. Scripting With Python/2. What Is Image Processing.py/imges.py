@@ -44,11 +44,11 @@ from pathlib import Path
 # ===========================================================
 
 
-img = Image.open(f"{Path(__file__).parent}/pokedex/Pokedex/astro.jpg")
+# img = Image.open(f"{Path(__file__).parent}/pokedex/Pokedex/astro.jpg")
 
 
-# new_image = img.resize((400, 400))
-img.thumbnail((400, 200))
-img.save("thumnaill.jpg")
-img.show()
-print(img.size)
+# # new_image = img.resize((400, 400))
+# img.thumbnail((400, 200))
+# img.save("thumnaill.jpg")
+# img.show()
+# print(img.size)
