@@ -18,7 +18,9 @@ def get_password_leaks_count(hashes, hash_to_check):
     print(hashes)
 
     for h, count in hashes:
-        print(h, count)
+        if h == hash_to_check:
+            return count
+    return 0
 
 
 def read_response(response):
