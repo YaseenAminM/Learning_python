@@ -1,3 +1,5 @@
+import sys
+
 import requests
 import hashlib
 
@@ -35,8 +37,25 @@ def pwned_api_check(password):
     response = request_api_data(first5_char)
     print(
         f"Full Password : {sha1password}\nfirst_5_char : {first5_char}\nTail: {tail}")
-    get_password_leaks_count(response, tail)
-    return response
+    # print(f"Count : {get_password_leaks_count(response, tail)}")
+    return get_password_leaks_count(response, tail)
 
 
-print(pwned_api_check("password123"))
+# print(pwned_api_check("123456789"))
+
+
+def main(args):
+    for passwords in args:
+        count = pwned_api_check(passwords)
+        if count:
+            print(
+                f"{passwords} was found times...({count}) you should probably change your password")
+        else:
+            print(f"{passwords} was NOT found. Carry on!.")
+        print("-----------------------------------------------------------------")
+    return "done!"
+
+
+main(sys.argv[1::])
+
+# print(sys.argv[1::])
